@@ -19,12 +19,12 @@
 {{end}}
 
 <div id="pagination">
-    {{if .ShowPrev}}
+    {{if .PrevLink}}
         <div id="prev">
             <a href="{{.PrevLink}}">&laquo; Previous Page</a>
         </div>
     {{end}}
-    {{if .ShowNext}}
+    {{if .NextLink}}
         <div id="next">
             <a href="{{.NextLink}}">Next Page &raquo;</a>
         </div>

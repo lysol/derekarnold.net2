@@ -64,8 +64,6 @@ type PageContext struct {
     CurrentNav *Nav
     Page int
     Posts []*Post
-    ShowPrev bool
-    ShowNext bool
 	NextLink string
 	PrevLink string
     Tag string
@@ -352,18 +350,17 @@ func main() {
 			return
 		}
         page--
-		showPrev, showNext := page > 0, page > maxPage
 		var nextLink string
 		var prevLink string
 
-		if showPrev && tag != "" {
+		if page > 0 && tag != "" {
 			prevLink = fmt.Sprintf("/tags/%s/page/%d", tag, page)
-		} else if showPrev {
+		} else if page > 0 {
 			prevLink = fmt.Sprintf("/page/%d", page)
 		}
-		if showNext && tag != "" {
+		if page < maxPage && tag != "" {
 			nextLink = fmt.Sprintf("/tags/%s/page/%d", tag, page+2)
-		} else if showNext {
+		} else if page < maxPage {
 			nextLink = fmt.Sprintf("/page/%d", page+2)
 		}
 
@@ -372,8 +369,6 @@ func main() {
             CurrentNav: currentNav,
             Page: page + 1,
             Posts: posts,
-            ShowPrev: showPrev,
-            ShowNext: showNext,
 			NextLink: nextLink,
 			PrevLink: prevLink,
 			Tag: tag,
