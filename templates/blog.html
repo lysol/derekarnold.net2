@@ -1,0 +1,33 @@
+{{define "body"}}
+{{if .Tag}}<h2>Posts tagged with <b>{{.Tag}}</b></h2>{{end}}
+
+{{range .Posts}}
+    <div class="blog_post">
+        <h1><a href="/post/{{.Token}}">{{.Meta.Title}}</a></h1>
+    <p>
+        {{.Body}} 
+    </p>
+    <div class="blog_footer">
+    Posted on 
+    <a href="/post/{{.Token}}">{{ .NiceDate }}</a>
+    {{if .Meta.Tags}}
+      &middot;
+      Tags: {{range .Meta.Tags}}<a href="/tags/{{.}}">{{.}}</a> {{end}}
+    {{end}}
+    </div>
+    </div>
+{{end}}
+
+<div id="pagination">
+    {{if .ShowPrev}}
+        <div id="prev">
+            <a href="{{.PrevLink}}">&laquo; Previous Page</a>
+        </div>
+    {{end}}
+    {{if .ShowNext}}
+        <div id="next">
+            <a href="{{.NextLink}}">Next Page &raquo;</a>
+        </div>
+    {{end}}
+</div>
+{{end}}
