@@ -31,5 +31,5 @@ may not always create an exception within the application, instead truncating
 output. Otherwise, the scope control within the template itself is pretty
 useful and even a net gain over other template engines like [Jinja](http://jinja.pocoo.org/) and [Django](https://www.djangoproject.com/)'s.
 
-Would I use Go for other web projects? Yeah, there's some pain during Development
+Would I use Go for other web projects? Yeah, there's some pain during development
 but the highly structured nature of it leads to fairly sturdy code.
