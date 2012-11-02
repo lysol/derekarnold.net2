@@ -33,3 +33,5 @@ useful and even a net gain over other template engines like [Jinja](http://jinja
 
 Would I use Go for other web projects? Yeah, there's some pain during development
 but the highly structured nature of it leads to fairly sturdy code.
+
+The source code is available at [Github](http://github.com/lysol/derekarnold.net2).
