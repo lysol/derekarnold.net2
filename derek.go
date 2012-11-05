@@ -263,6 +263,12 @@ func main() {
     http.Handle("/images/",
         http.StripPrefix("/images/", http.FileServer(http.Dir("images/"))))
 
+    http.Handle("/css/",
+        http.StripPrefix("/css/", http.FileServer(http.Dir("css/"))))
+
+    http.Handle("/js/",
+        http.StripPrefix("/js/", http.FileServer(http.Dir("js/"))))
+
     http.HandleFunc("/about", func(w http.ResponseWriter, r *http.Request) {
         currentNav, err := getNav("about")
         if err != nil {

@@ -27,7 +27,7 @@ The [template](http://golang.org/pkg/html/template) library is also a welcome
 addition but is rough around the edges. The control structures within template
 tags are fairly primitive, requiring you to embed your own functions to accomplish
 basic boolean logic within the template itself. Exceptions within the template
-may not always create an exception within the application, instead truncating
+may not always create an exception within the application, instead of truncating
 output. Otherwise, the scope control within the template itself is pretty
 useful and even a net gain over other template engines like [Jinja](http://jinja.pocoo.org/) and [Django](https://www.djangoproject.com/)'s.
 
