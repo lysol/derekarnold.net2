@@ -5,36 +5,37 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-size: 18px;
-	line-height: 22px;
-	color: #FFFFFF;
+  font-size: 15px;
+  line-height: 21px;
+	color: #333333;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
-	font-family: 'Average Sans', Georgia, Times, Times New Roman, serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 400;
 	position: relative;
-	background-color: #000000;
+	background-color: #FFFFFF;
+	background-image: url('../images/02.png');
+	background-attachment: fixed;
 }
 
 a,a:hover,a:active,a:visited {
-	color: #DDFFDD;
-	text-decoration: none;
-	font-weight: bold;
+	color: #000000;
 }
 
 #content {
 	padding: 4.9em;
 	margin-top: 1em;
-	padding-top: 1.6em;
-	padding-bottom: 1em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 	margin-bottom: 3em;
 	position: relative;
-	width: 32em;
+	width: 52em;
 	margin-left: auto;
 	margin-right: 5%;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 8px;
-	color: #FFFFFF;
+	background-color: #FFFFFF;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	color: #333333;
 }
 
 #list_cont {
@@ -60,7 +61,7 @@ a,a:hover,a:active,a:visited {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 3em;
-	color: #EEEEEE;
+	letter-spacing: -2px;
 }
 
 
@@ -78,21 +79,22 @@ a,a:hover,a:active,a:visited {
 #nav li {
 	display: inline;
 	padding-right: 1em;
+	font-size: 14pt;
+	letter-spacing: -1px;
 }
 
 #nav a {
-	text-decoration: none;
 }
 
 #nav {
 	display: inline;
 	position: absolute;
-	top: 2.4em;
+	top: 2.7em;
 	right: 0;
 }
 
 h1 {
-	font-size: 1.4em;
+	font-size: 2.4em;
 	text-style: normal;
 }
 
@@ -108,6 +110,8 @@ h2 {
 
 .resume-section h2 {
 	margin-left: -1em;
+	padding-bottom: 0.25em;
+	border-bottom: 1px dotted #AAA;
 }
 
 .resume-section ul {
@@ -117,6 +121,8 @@ h2 {
 .blog_post {
 	margin-bottom: 4.5em;
 	position: relative;
+  font-size: 15px;
+  line-height: 21px;
 }
 
 .blog_post p {
@@ -124,16 +130,21 @@ h2 {
 	margin-bottom: 1em;
 	}
 
-.blog_post blockquote {
-	margin-top: 2em;
-	margin-bottom: 2em;
-	font-size: 90%;
-	background-color: #000000;
-	padding: 0.5em;
-	padding-left: 1em;
-	padding-right: 1em;
-	border-radius: 4px;
+.blog_post blockquote, .blog_post pre {
+	font-size: 10pt;
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin: 3em;
+	padding: 0;
+	padding-bottom: 1em;
+	border-bottom: 1px dotted #AAA;
+	width: 50em;
+	color: #000;
 }
+
+.blog_post pre {
+	font-family: 'Anonymous Pro', monospace;
+	}
 
 .blog_post h1 {
 	margin-bottom: 1em;
@@ -141,44 +152,31 @@ h2 {
 }
 
 .blog_post h1 a {
+	line-height: 1.1em;
 	text-decoration: none;
-	color: #DDFFDD;
+	color: #333;
 }
 
-.blog_post pre {
-	font-family: 'Anonymous Pro', monospace;
-	font-size: 10pt;
-	background-color: #000000;
-	color: #FFFFFF;
-	overflow-x: auto;
-	overflow-y: hidden;
-	padding: 2em;
-	width: auto;
-	-webkit-border-radius: .25em;
-	-moz-border-radius: .25em;
-	border-radius: .25em;
-	}
 
 .blog_footer {
-	font-size: 12pt;
-	color: #EEEEEE;
-	font-weight: bold;
+	font-size: 11pt;
 	padding-left: 0.15em;
+	color: #151515;
 }
 
 #header h1 {
 	display: inline;
-	font-size: 2.1em;
+	font-size: 50px;
 }
 
 #header a, #header a:visited, #header a:hover,
 #header a:active {
-	color: #DDFFDD;
+	color: #333;
+	text-decoration: none;
 }
 
 #header h1 a, #header h1 a:visited, #header ah1 a:hover,
 #header h1 a:active {
-	text-decoration: none;
 	color: inherit;
 }
 
@@ -188,11 +186,7 @@ h2 {
 	padding-bottom: 1em;
 	font-weight: bold;
 	margin-bottom: 1em;
-}
-
-#pagination a {
-	text-decoration: none;
-	color: #FFFFFF;
+	font-size: 16px;
 }
 
 #prev {
@@ -206,23 +200,20 @@ h2 {
 }
 
 #derek {
-	position: absolute;
-	left: 2.95em;
-	top: 7.2em;
 	padding: 0;
-	margin: 2em;
 	-webkit-border-radius: .125em;
 	-moz-border-radius: .125em;
 	border-radius: .125em;
-	background-image: url('/images/derek.jpg');
-	width: 11em;
-	height: 11em;
+	background-image: url('/images/derek.png');
+	width: 51em;
+	height: 14em;
 	bg-size: 100% 100%;
+	margin-bottom: 2em;
 }
 
 .about {
 	margin-bottom: 1em;
-	margin-left: 13.765em;
+	padding-right: 1em;
 }
 
 #byline {
