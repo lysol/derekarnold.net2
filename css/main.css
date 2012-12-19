@@ -5,7 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
 	color: #333333;
 	-webkit-font-smoothing: antialiased;
@@ -14,8 +14,9 @@ body {
 	font-weight: 400;
 	position: relative;
 	background-color: #FFFFFF;
-	background-image: url('../images/02.png');
+	background-image: url('../images/red.jpg');
 	background-attachment: fixed;
+	background-position: 50% 50%;
 }
 
 a,a:hover,a:active,a:visited {
@@ -29,12 +30,12 @@ a,a:hover,a:active,a:visited {
 	padding-bottom: 5em;
 	margin-bottom: 3em;
 	position: relative;
-	width: 52em;
-	margin-left: auto;
-	margin-right: 5%;
+	width: 42em;
+	margin-right: auto;
+	margin-left: 5%;
 	background-color: #FFFFFF;
-	border-top-right-radius: 100px;
-	border-bottom-left-radius: 100px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
 	color: #333333;
 }
 
@@ -89,7 +90,7 @@ a,a:hover,a:active,a:visited {
 #nav {
 	display: inline;
 	position: absolute;
-	top: 2.7em;
+	top: 2.4em;
 	right: 0;
 }
 
@@ -121,7 +122,7 @@ h2 {
 .blog_post {
 	margin-bottom: 4.5em;
 	position: relative;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
 }
 
@@ -138,7 +139,7 @@ h2 {
 	padding: 0;
 	padding-bottom: 1em;
 	border-bottom: 1px dotted #AAA;
-	width: 50em;
+	width: 40em;
 	color: #000;
 }
 
@@ -166,7 +167,7 @@ h2 {
 
 #header h1 {
 	display: inline;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 #header a, #header a:visited, #header a:hover,
@@ -205,10 +206,12 @@ h2 {
 	-moz-border-radius: .125em;
 	border-radius: .125em;
 	background-image: url('/images/derek.png');
-	width: 51em;
+	width: 39.5em;
 	height: 14em;
 	bg-size: 100% 100%;
 	margin-bottom: 2em;
+	border-radius: 40px;
+	border: 10px #FFFFFF solid;
 }
 
 .about {
